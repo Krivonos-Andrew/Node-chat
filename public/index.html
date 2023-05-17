@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatIt</title>
+</head>
+
+<body>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+        <select id="room">
+            <option>hello</option>
+            <option>bye</option>
+            <option>new</option>
+        </select>
+        <input id="input" autocomplete="off" />
+        <button>Send</button>
+    </form>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="http://localhost:11001/socket.io/socket.io.js"></script>
+
+    <script src="/public/javascripts/chat.js"></script>
+
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+</body>
+
+</html>
